@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/booktexture"
+    tools:context=".NewBookActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/BookListCard"
+        android:layout_width="306dp"
+        android:layout_height="595dp"
+        app:cardBackgroundColor="#e6edef"
+        app:cardCornerRadius="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="171dp"
+            android:layout_height="177dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/addbookicon" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="154dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="200dp"
+            android:text="@string/book_details"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/orange"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/bookName"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="@dimen/text_view_margin_start"
+            android:layout_marginTop="280dp"
+            android:text="@string/book_name"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextbookName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/edit_text_margin_start"
+            android:layout_marginTop="267dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/bookNo"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="@dimen/text_view_margin_start"
+            android:layout_marginTop="330dp"
+            android:text="@string/book_number"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextbookNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/edit_text_margin_start"
+            android:layout_marginTop="317dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/authorName"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="@dimen/text_view_margin_start"
+            android:layout_marginTop="380dp"
+            android:text="@string/author_name"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextAuthorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/edit_text_margin_start"
+            android:layout_marginTop="367dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="91dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="@dimen/text_view_margin_start"
+            android:layout_marginTop="430dp"
+            android:text="@string/quantity"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/edit_text_margin_start"
+            android:layout_marginTop="417dp"
+            android:ems="10"
+            android:text=""
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/addBookButton"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="500dp"
+            android:backgroundTint="@color/orange"
+            android:text="@string/add_book"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="608dp" />
+
+
+        <Button
+            android:id="@+id/addBookImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="500dp"
+            android:backgroundTint="@color/orange"
+            android:text="@string/upload_image"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="608dp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

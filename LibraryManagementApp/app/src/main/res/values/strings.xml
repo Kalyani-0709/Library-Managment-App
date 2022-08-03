@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LibraryManagementSystem</string>
+    <string name="book_number">Book Number :</string>
+    <string name="book_details">Book Details</string>
+    <string name="book_name">Book Name :</string>
+    <string name="author_name">Author Name :</string>
+    <string name="quantity">Quantity :</string>
+    <string name="add_book">Add Book</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="empty_not_saved">Book not saved because it is empty.</string>
+</resources>
